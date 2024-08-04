@@ -3,7 +3,7 @@ import { whyChooseUs } from "../data/content";
 
 export const WhyChooseUs = () => {
   return (
-    <div className="max-w-[80rem] px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
+    <div className="max-w-[80rem] px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto py-20">
       <h2 className="text-left text-2xl lg:text-3xl font-bold montserrat-font-title">
         Thriveads
       </h2>
