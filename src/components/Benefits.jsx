@@ -23,10 +23,10 @@ const Benefits = () => {
   return (
     <div className="bg-white py-16">
       <div className="container max-w-6xl mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h1 className="text-xl font-medium mb-2">CuanManagement</h1>
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 montserrat-font-title">
-            Apa Saja Yang Akan Anda Rasakan Setelah Menggunakan Layanan Kami?
+        <div className="mb-12 text-left">
+          <h1 className="text-xl font-medium mb-2">Thriveads</h1>
+          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 montserrat-font-title max-w-4xl">
+            Apa Saja yang Akan Anda Rasakan Setelah Menggunakan Layanan Kami?
           </h2>
         </div>
 

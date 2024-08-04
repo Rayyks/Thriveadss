@@ -1,92 +1,90 @@
-import { lazy } from "react";
-import {
-  IconNumber1,
-  IconNumber2,
-  IconNumber3,
-  IconNumber4,
-  IconNumber5,
-  IconNumber6,
-} from "@tabler/icons-react";
-const PricingBg = lazy(() => import("./ui/pricing-bg"));
-import { pricing } from "../data/content";
+import React from "react";
+
+const PricingCard = ({ title, price, features }) => (
+  <div className="bg-white rounded-3xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col justify-between">
+    <div>
+      <div className="p-8 bg-indigo-600 text-white">
+        <h3 className="text-2xl font-bold mb-2">{title}</h3>
+      </div>
+      <div className="p-8">
+        <ul className="space-y-4">
+          {features.map((feature, index) => (
+            <li key={index} className="flex items-center">
+              <svg
+                className="w-5 h-5 text-green-500 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    <div className="p-8 text-center">
+      <p className="text-3xl font-bold">{price}</p>
+    </div>
+  </div>
+);
 
 export const Pricing = () => {
-  // Helper function to get the appropriate icon
-  const getIcon = (index) => {
-    switch (index) {
-      case 0:
-        return (
-          <IconNumber1 className="bg-white rounded-full w-4 h-4 text-black" />
-        );
-      case 1:
-        return (
-          <IconNumber2 className="bg-white rounded-full w-4 h-4 text-black" />
-        );
-      case 2:
-        return (
-          <IconNumber3 className="bg-white rounded-full w-4 h-4 text-black" />
-        );
-      case 3:
-        return (
-          <IconNumber4 className="bg-white rounded-full w-4 h-4 text-black" />
-        );
-      case 4:
-        return (
-          <IconNumber5 className="bg-white rounded-full w-4 h-4 text-black" />
-        );
-      default:
-        return (
-          <IconNumber6 className="bg-white rounded-full w-4 h-4 text-black" />
-        );
-    }
-  };
+  const plans = [
+    {
+      title: "Basic",
+      price: "Rp 400.000",
+      features: [
+        "Konsultasi dan Strategi 3x",
+        "Pelatihan atau Workshop 2x",
+        "Target Audience (lokasi, usia dan minat)",
+        "Free konten desain dan copywriting",
+        "Durasi iklannya 7 hari",
+        "Report",
+      ],
+    },
+    {
+      title: "Plus",
+      price: "Rp 800.000",
+      features: [
+        "Konsultasi dan Strategi 5x",
+        "Pelatihan atau Workshop 4x",
+        "Target Audience (lokasi, usia dan minat)",
+        "Free konten desain dan copywriting",
+        "Durasi iklannya 14 hari",
+        "Report",
+        "Additional support",
+      ],
+    },
+    {
+      title: "Premium",
+      price: "Rp 1.200.000",
+      features: [
+        "Konsultasi dan Strategi 7x",
+        "Pelatihan atau Workshop 6x",
+        "Target Audience (lokasi, usia dan minat)",
+        "Free konten desain dan copywriting",
+        "Durasi iklannya 30 hari",
+        "Report",
+        "Premium support",
+        "Advanced analytics",
+      ],
+    },
+  ];
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-t from-gray-950 to-gray-800">
-      <PricingBg />
-      <div className="relative flex flex-col items-center justify-center px-8 py-12 mx-auto md:px-12 lg:px-16 xl:px-36 max-w-9xl lg:py-16">
-        <h2 className="montserrat-font-title text-5xl text-white mb-20">
-          Penetapan Harga
-        </h2>
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 gap-y-12">
-          {pricing.map((item, index) => (
-            <div key={index} className="px-4">
-              <div className="flex items-center justify-center gap-3 text-white">
-                <p className="font-mono text-4xl font-medium">{item.title}</p>
-              </div>
-              <div className="p-8 mt-4 shadow-2xl shadow-black rounded-xl bg-gray-900 backdrop-blur-xl border-white/5 ring-1 ring-white/10">
-                <ul
-                  className="flex flex-col text-sm text-gray-400 gap-y-3"
-                  role="list"
-                >
-                  {item.features.map((feature, featureIndex) => (
-                    <li
-                      key={featureIndex}
-                      className="flex flex-row items-center gap-2"
-                    >
-                      {getIcon(featureIndex)}
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-6 font-mono font-bold tracking-tighter">
-                  <span className="text-2xl text-white lg:text-3xl">
-                    {item.price}
-                  </span>
-                  <span className="text-base font-medium text-gray-500">
-                    {" "}
-                    /bln
-                  </span>
-                </p>
-                <div className="flex mt-6 lg:mt-12">
-                  <a
-                    className="rounded-lg px-4 py-2 text-sm transition-all flex items-center justify-center text-white bg-gradient-to-b from-white/[.105] to-white/[.15] hover:to-white/[.25] h-10 ring-1 ring-inset ring-white/10 w-full"
-                    href="#"
-                  >
-                    Beli Sekarang
-                  </a>
-                </div>
-              </div>
-            </div>
+    <section className="bg-gray-100 py-20">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {plans.map((plan, index) => (
+            <PricingCard key={index} {...plan} />
           ))}
         </div>
       </div>

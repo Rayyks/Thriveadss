@@ -4,20 +4,21 @@ import React from "react";
 export const Hero = () => {
   return (
     <section className="relative flex items-center w-full">
-      <div className="relative items-center w-full px-5 py-24 mx-auto lg:px-16 lg:py-36 max-w-7xl md:px-12">
+      <div className="relative items-center w-full px-5  mx-auto lg:px-16 lg:py-36 max-w-7xl md:px-12">
         <div className="relative flex-col items-start m-auto align-middle">
           <div className="grid grid-cols-1 gap-6 lg:gap-24 lg:grid-cols-2">
             <div className="relative items-center gap-12 m-auto lg:inline-flex">
               <div className="max-w-xl text-center lg:text-left">
                 <div>
                   <p className="text-3xl montserrat-font-title md:text-4xl text-slate-900">
-                    Biarkan Kami Membantu Mengurus Iklan Anda Agar Hasilnya
-                    Maksimal!
+                    Santai aja, biar kami yang handle iklan kamu biar hasilnya
+                    maksimal!
                   </p>
                   <p className="mt-4 text-lg text-gray-900 lg:text-md">
-                    Kami akan membantu Anda menjalankan iklan di sosial media,
-                    agar hasilnya maksimal dan omset Anda meningkat berkali
-                    lipat. KONSULTASI GRATIS SEKARANG JUGA!!
+                    Santai aja, serahkan iklan sosmed kamu ke kami. Hasil
+                    maksimal, omset melonjak! Kami akan kerja sama dengan kamu
+                    untuk capai target. Konsultasi gratis, BURUAN DAFTAR
+                    SEKARANG !!
                   </p>
                 </div>
                 <div className="flex flex-col items-center gap-3 mt-10 lg:flex-row">
@@ -36,8 +37,8 @@ export const Hero = () => {
             <div className="block w-full mt-12 lg:mt-0">
               <img
                 alt="hero"
-                className="object-cover object-center w-full mx-auto drop-shadow-xl lg:ml-auto rounded-2xl"
-                src="/Hero-1.webp"
+                className="object-cover object-center w-full mx-auto  lg:ml-auto rounded-2xl"
+                src="/hero-1.png"
                 loading="lazy"
               />
             </div>

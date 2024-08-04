@@ -10,6 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingLayout />}>
           <Route index element={<LandingPage />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
+          <Route path="loader" element={<Loader />} />
         </Route>
       </Routes>
     </Suspense>

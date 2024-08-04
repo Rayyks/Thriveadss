@@ -7,7 +7,8 @@ import { Footer } from "../components/ui/Footer";
 const LandingLayout = () => {
   return (
     <Fragment>
-      <Header />
+      {/* <Header /> */}{" "}
+      {/* Kalau mau design tambahan header boleh uncomment ini ya  */}
       <Outlet />
       <Footer />
     </Fragment>

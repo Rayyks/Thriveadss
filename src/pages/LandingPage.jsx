@@ -4,13 +4,12 @@ import { Client } from "../components/Client";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 import { Consultation, Questions } from "../components/Consultation";
 import Benefits from "../components/Benefits";
-import FaqSection from "../components/Faq";
 import { Pricing } from "../components/Pricing";
 import { About } from "../components/About";
 
 const LandingPage = () => {
   return (
-    <main className="bg-gray-100">
+    <main className="bg-[#FFFFFF]">
       <section>
         <Hero />
       </section>
@@ -23,7 +22,7 @@ const LandingPage = () => {
       <section>
         <Client />
       </section>
-      <section>
+      <section className="bg-gray-50">
         <WhyChooseUs />
       </section>
       <section>
@@ -38,9 +37,9 @@ const LandingPage = () => {
       <section>
         <Questions />
       </section>
-      <section>
+      {/* <section>
         <FaqSection />
-      </section>
+      </section> */}
     </main>
   );
 };

@@ -3,9 +3,9 @@ import { whyChooseUs } from "../data/content";
 
 export const WhyChooseUs = () => {
   return (
-    <div className="max-w-[80rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="max-w-[80rem] px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
       <h2 className="text-left text-2xl lg:text-3xl font-bold montserrat-font-title">
-        CuanManagement
+        Thriveads
       </h2>
       <h2 className="montserrat-font-title text-2xl lg:text-4xl mt-5 mb-10 font-semibold">
         Mengapa Memilih Kami?
