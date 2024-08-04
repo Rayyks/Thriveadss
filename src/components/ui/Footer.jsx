@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-wrap justify-center items-center gap-2">
           <div>
             <p className="text-md font-semibold text-gray-900">
-              © 2024 PT Bersama Cuan Digital All Right Reserved
+              © 2024 Thriveads All Right Reserved
             </p>
           </div>
         </div>
