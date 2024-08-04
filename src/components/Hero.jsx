@@ -24,7 +24,7 @@ export const Hero = () => {
                 <div className="flex flex-col items-center gap-3 mt-10 lg:flex-row">
                   <a
                     className="inline-flex items-center justify-center w-full px-6 py-4 text-center text-white duration-200 bg-indigo-500 border-2 border-indigo-500 focus:outline-none focus-visible:outline-black focus-visible:ring-black hover:bg-transparent hover:border-indigo-500 hover:text-indigo-500 lg:w-auto rounded-xl"
-                    href="https://wa.me/6281267663389?text=Halo%20admin%20saya%20ingin%20konsultasi%20masalah%20iklan%20bisnis%20saya.%20Mohon%20dibantu."
+                    href="https://wa.me/6287857675628?text=Halo%20admin%20saya%20ingin%20konsultasi%20masalah%20iklan%20bisnis%20saya.%20Mohon%20dibantu."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
