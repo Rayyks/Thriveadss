@@ -14,7 +14,7 @@ const ConsultationCard = ({ title, description, buttonText }) => {
         <div className="flex justify-center">
           <a
             className="sm:w-2/3 md:w-1/2 lg:w-[100%]  py-3 px-6 inline-flex justify-center items-center gap-x-2 text-sm sm:text-base font-medium rounded-lg border border-transparent bg-[#DEDCFF] text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 ease-in-out"
-            href="https://wa.me/6281267663389?text=Halo%20admin%20saya%20ingin%20konsultasi%20masalah%20iklan%20bisnis%20saya.%20Mohon%20dibantu."
+            href="https://wa.me/6287857675628?text=Halo%20admin%20saya%20ingin%20konsultasi%20masalah%20iklan%20bisnis%20saya.%20Mohon%20dibantu."
             target="_blank"
             rel="noopener noreferrer"
           >
